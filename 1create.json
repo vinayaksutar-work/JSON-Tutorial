@@ -1,0 +1,10 @@
+{
+    "Name": "Vinayak",
+    "Mobile": 7028787287,
+    "City": "Kolhapur",
+    "Course":["Flutter","Kotlin","Android","Dart"],
+    "Address": {
+        "Area": "Kagal",
+        "Pincode": 416216
+    }
+}
