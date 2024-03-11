@@ -1,0 +1,15 @@
+{
+    "Name": "rohit",
+    "Marks": 77,
+    "Date": "2019-03-27",
+    "Courses": ["Django","Kotlin","Flutter","Flask"],
+    "Address":{
+        "City": "Pune",
+        "Area": "Bavdhan",
+        "Pincode": 411021,
+        "Ion":87.34,
+        "lat":45.77
+    },
+    "married": false,
+    "dod": null
+}
