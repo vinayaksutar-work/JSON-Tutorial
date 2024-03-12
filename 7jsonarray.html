@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link rel="stylesheet" href="style.css">
+<title>JSON Array</title>
+</head>
+<body>
+    <div class="container my-5 ">
+        <h2>Accessing JSON array values</h2>
+        <div id="myid"></div>
+    </div>
+<script>
+    var obj = {
+        "name": "vihan",
+        "mobile": 9090909090,
+        "course": ["PHP","JAVA","ANDROID",".NET"]
+    };
+    var c1=obj.course[0];
+    var c2=obj.course[1];
+    var c3=obj.course[2];
+    var c4=obj.course[3];
+    document.getElementById("myid").innerHTML=c1+"<br>"+c2+"<br>"+c3+"<br>"+c4;
+</script>
+</body>
+</html>
