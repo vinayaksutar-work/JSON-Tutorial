@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<title>Title</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h3>Accessing array values using for loop</h3>
+        <div id="myid"></div>
+        <div id="myid1"></div>
+    </div>
+<script>
+    var obj,i,x="";
+    obj = {
+        "name":"deepak",
+        "mobile":9393939393,
+        "courses":["PHP",".NET","PYTHON","ANDROID"]
+    };
+    // Modifying array index values
+    obj.courses[1] = "FLUTTER";
+
+    // Delete array index value
+    delete obj.courses[2];
+
+    // Delete JSON key
+    delete obj.mobile;
+    
+    for(i=0;i<obj.courses.length;i++)
+    {
+        x+=obj.courses[i]+"<br>";
+    }
+    document.getElementById("myid").innerHTML=x+"<br>";
+    document.getElementById("myid1").innerHTML="Name : "+obj.name+"<br>"+obj.mobile+"<br>";
+</script>
+</body>
+</html>
