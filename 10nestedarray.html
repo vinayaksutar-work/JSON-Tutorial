@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<title>Nested Array</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h2>Accessing nested array value using loop</h2>
+        <div id="myid"></div>
+    </div>
+<script>
+    var obj,i,j,x="";
+    obj = {
+        "name": "vijay",
+        "courses": [
+            { 
+                "catname": "Website Development",
+                "cname": ["PHP","JAVA","PYTHON",".NET"]
+            },
+            {
+                "catname": "Mobile App Development",
+                "cname": ["Android","Flutter","Dart"]
+            },
+            {
+                "catname": "Digital Marketing",
+                "cname": ["SEO","SEM","SMO"]
+            }
+        ]
+    };
+    for (i in obj.courses)
+    {
+        x+="<h4>"+obj.courses[i].catname+"</h4>";
+        for(j in obj.courses[i].cname)
+        {
+            x+=obj.courses[i].cname[j]+"<br>";
+        }
+    }
+    document.getElementById("myid").innerHTML = x;
+</script>
+</body>
+</html>
